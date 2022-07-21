@@ -16,5 +16,11 @@ module.exports = {
                 exclude: /node_modules/
             }
         ]
+    },
+    devServer:{
+        static: {
+            directory: './assets'
+        } ,
+        port: 4500
     }
 };

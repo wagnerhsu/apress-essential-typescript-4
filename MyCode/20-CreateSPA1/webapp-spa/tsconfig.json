@@ -1,6 +1,6 @@
 {
     "compileOptions": {
-        "target":"es3020",
+        "target":"es2020",
         "outDir":"./dist",
         "rootDir":"./src"
     }
