@@ -3,8 +3,17 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from "./components/HelloWorld.vue";
 import { writeMessage, sizeFormatter, costFormatter } from "./js/formatters";
+import { Employee, getEmployee } from "./js/employee";
 
-writeMessage("test", "param");
+/// <reference path="./js/employee.d.ts" />
+
+const emp = getEmployee(1, "James", 100) as Employee;
+
+console.log(emp.id); // 👉️ 1
+console.log(emp.name); // 👉️ "James"
+console.log(emp.salary); // 👉️ 100
+
+writeMessage("test");
 sizeFormatter("test", 2);
 costFormatter("test", "hi");
 sizeFormatter(2, 2);
