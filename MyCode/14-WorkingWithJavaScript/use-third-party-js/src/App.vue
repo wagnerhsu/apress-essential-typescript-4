@@ -4,6 +4,7 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import debug from "debug";
 
+console.log(debug.default.name);
 let db = debug("Example App", true);
 db.enabled = true;
 db("Message", "Test message");
