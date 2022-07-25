@@ -1,0 +1,7 @@
+{
+    "compileOptions": {
+        "target":"es2020",
+        "outDir":"./dist",
+        "rootDir":"./src"
+    }
+}
